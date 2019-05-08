@@ -34,3 +34,11 @@ returns `{"lines":[{"name":"M4"},{"name":"200"},{"name":"S75"}]}`
  *`http://localhost:8081/lines/{name}/delay`*
 e.g.: `http://localhost:8081/lines/M4/delay`
 returns `{"delayed":true}`
+
+## Technical details
+
+ - Solution implemented by using Spring, Spring Boot, JPA, H2 
+ - All csv data stored into H2 database 
+ - Important: Test coverage just in controllers layers cover both: unit and integration test. All
+   implemented by using Spock and RestAssured. Please check
+   [component]Spec files to get a general idea of test coverage.
