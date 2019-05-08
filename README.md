@@ -19,13 +19,18 @@ Build a web API which provides the following features:
 Endpoints should be available via port `8081`
 
 # Solution
-- Fist task is solved by accessing an endpoint like this
+
+ 1. Fist task is solved by accessing an endpoint like this
 *`http://localhost:8081/lines/findByTimeAndStop?time=[time]xCoordinate=[xValue]&yCoordinate=[yValue]`*
 e.g.: `http://localhost:8081/lines/findByTimeAndStop?time=10:00:00&xCoordinate=1&yCoordinate=1`
 returns `{"lines":[{"name":"M4"}]}`
-- Second task is solver by accessing an endpoint like this *`http://localhost:8081/lines/findByStop?stopId=[stopId]`*
+
+ 2. Second task is solver by accessing an endpoint like this
+*`http://localhost:8081/lines/findByStop?stopId=[stopId]`*
 e.g.: `http://localhost:8081/lines/findByStop?stopId=3`
 returns `{"lines":[{"name":"M4"},{"name":"200"},{"name":"S75"}]}`
-- Third one is solved with an endpoint like this *`http://localhost:8081/lines/{name}/delay`*
+
+ 3. Third one is solved with an endpoint like this
+ *`http://localhost:8081/lines/{name}/delay`*
 e.g.: `http://localhost:8081/lines/M4/delay`
 returns `{"delayed":true}`
