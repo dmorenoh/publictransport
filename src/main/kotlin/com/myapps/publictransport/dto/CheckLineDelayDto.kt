@@ -1,4 +1,3 @@
 package com.myapps.publictransport.dto
 
-class CheckLineDelayDto {
-}
+data class CheckLineDelayDto(val isDelayed: Boolean)

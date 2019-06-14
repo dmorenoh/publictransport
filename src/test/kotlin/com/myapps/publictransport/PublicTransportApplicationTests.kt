@@ -1,4 +1,4 @@
-package com.myapps.publictransport.publictransport
+package com.myapps.publictransport
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class PublictransportApplicationTests {
+class PublicTransportApplicationTests {
 
 	@Test
 	fun contextLoads() {

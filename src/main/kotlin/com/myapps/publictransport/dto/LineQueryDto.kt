@@ -1,4 +1,5 @@
 package com.myapps.publictransport.dto
 
-class LineQueryDto {
-}
+import java.sql.Time
+
+data class LineQueryDto(val time: Time, val stopDto: StopDto)

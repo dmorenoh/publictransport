@@ -1,4 +1,7 @@
 package com.myapps.publictransport.exception
 
-class LineNotFoundException {
-}
+import org.springframework.http.HttpStatus
+import org.springframework.web.bind.annotation.ResponseStatus
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+class LineNotFoundException(message: String) : RuntimeException(message)

@@ -1,4 +1,4 @@
 package com.myapps.publictransport.dto
 
-class StopDto {
-}
+data class StopDto(val xCoordinate: Int, val yCoordinate: Int)
+

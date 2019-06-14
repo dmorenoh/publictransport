@@ -1,4 +1,9 @@
 package com.myapps.publictransport.service
 
-class LineServiceImplSpec {
+import spock.lang.Specification
+
+class LineServiceImplSpec extends Specification {
+    def "should return line"(){
+
+    }
 }
